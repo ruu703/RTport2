@@ -43,23 +43,23 @@ debug('POST情報：'.print_r($_POST,true));
                     $to = $email;
                     $subject = ' パスワード再発行認証　|　ねこ図鑑';
                     $comment = <<<COT
-本メールアドレス宛にパスワード再発行のご依頼がありました。
-下記のURLにて認証キーをご入力頂くとパスワードが再発行されます。
+                    本メールアドレス宛にパスワード再発行のご依頼がありました。
+                    下記のURLにて認証キーをご入力頂くとパスワードが再発行されます。
 
-パスワード灰発行認証キー入力ページ: http://localhost/WEBUKATU/op/nekozukan/passRemindRecieve.php
-認証キー　: {$auth_key}
-※認証キーの有効期限は30分となります
+                    パスワード灰発行認証キー入力ページ: http://localhost/WEBUKATU/op/nekozukan/passRemindRecieve.php
+                    認証キー　: {$auth_key}
+                    ※認証キーの有効期限は30分となります
 
-認証キーの再発行は下記ページより再度、再発行をお願い致します。
-http://localhost/WEBUKATU/op/nekozukan/passRemindSend.php
+                    認証キーの再発行は下記ページより再度、再発行をお願い致します。
+                    http://localhost/WEBUKATU/op/nekozukan/passRemindSend.php
 
 
-//////////////////////////////////
-ねこ図鑑
-URL http://nekozukan.com/
-E-mail info@nekozukan.com
-/////////////////////////////////
-COT;
+                    //////////////////////////////////
+                    ねこ図鑑
+                    URL http://nekozukan.com/
+                    E-mail info@nekozukan.com
+                    /////////////////////////////////
+                    COT;
                     
                     sendMail($form,$to,$subject,$comment);
                     

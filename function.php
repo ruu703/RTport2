@@ -403,14 +403,7 @@ function isLogin(){
         return false;
     }
 }
-//function getNekoOne($n_id){
-   // debug('ねこちゃん情報を取得します。');
-   // debug('ねこID:'.n_id);
-   // try{
-   //     $dbh = dbConnect();
-     //   $sql = 'SELECT c.id,c.name,c.gender,c.birth,c.type_id'
-    //}
-//}
+
 //その他
 //サニタイズ
 function sanitize($str){

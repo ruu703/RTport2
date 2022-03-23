@@ -30,10 +30,6 @@ $birthdate = $nekoData['birth'];
 //=====================================
 //　メッセージ部分画面処理
 //=====================================
-//$partnerUserId = '';
-//$ownerInfo = '';
-//$catInfo = '';
-//$viewData = '';
 
 $viewData = (!empty($n_id)) ? getMsgsAndBord($n_id) : '0';
 //debug('取得したDBデータ$viewData:'.print_r($viewData,true));
@@ -47,30 +43,8 @@ if(empty($viewData)){
 $userData = getUser($viewData['owner']);
 //debug('$userDataの中身:'.print_r($userData,true));
 
-
-//if($viewData !== 1){
-    //$catInfo = getnekoOne($viewData['cat_id']);
-    //debug('取得したDBデータ:'.print_r($catInfo,true));
-    
-    //if(empty($catInfo)){
-       // error_log('エラー発生：ねこちゃん情報が取得できませんでした');
-       // header("Location:index.php");
-   // }
-//}
 $getMessage = getMsg($viewData['id']);
 //debug('$getMessage:'.print_r($getMessage,true));
-
-//if(false == $partnerUserInfo){
-   // error_log('エラー発生:相手のユーザー情報が取得できませんでした');
-//}
-
-//DBから自分のユーザー情報を取得
-//$myUserInfo = getUser($_SESSION['user_id']);
-
-//if(empty($myUserInfo)){
-    //error_log('エラー発生:自分のユーザー情報が取得できませんでした');
-    //header("Location:index.php");
-//}
 
 //debug('取得したDBデータ:'.print_r($nekoData,true));
 

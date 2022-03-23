@@ -44,18 +44,7 @@ if(!empty($_POST)){
     　　validEmail($email,'email');
        validRequired($email,'email');
    }
-    //if(!empty($dbFormData['password']!== $pass)){
-        //validHalf($pass,'pass');
-        //validMaxLen($pass,'pass');
-        //validMinLen($pass,'pass');
-        
-        //validMaxLen($pass_re,'pass_re');
-        //validMinLen($pass_re,'pass_re');
-        
-        //if(empty($err_msg)){
-        //    validMatch($pass,$pass_re,'pass_re');
-       // }
-    //}
+    
 if(empty($err_msg)){
     debug('バリデーションOKです。');
     try{
@@ -127,23 +116,7 @@ require('head.php');
                      </div>
                  <input type="text" name="email" value="<?php echo getFormData('email'); ?>">
                   </label>
-                  <!--
-                  <label class="<?php if(!empty($err_msg['pass'])) echo 'err'; ?>">
-                     パスワード
-                      <div class="area-msg"><?php
-                     if(!empty($err_msg['pass'])) echo $err_msg['pass']; 
-                     ?></div>
-                 <input type="password" name="pass" value="<?php if(!empty($pass)) echo $pass; ?>">
-                  </label>
                   
-                  <label class="<?php if(!empty($err_msg['pass_re'])) echo 'err'; ?>" >
-                     パスワード（再入力）
-                     <div class="area-msg"> <?php
-                     if(!empty($err_msg['pass_re'])) echo $err_msg['pass_re']; 
-                     ?></div>
-                 <input type="password" name="pass_re" value="<?php if(!empty($pass_re)) echo $pass_re; ?>">
-                  </label>
-                  -->
                      プロフィール画像
                       <div class="area-msg">
                          <?php if(!empty($err_msg['pic'])) echo $err_msg['pic']; 
