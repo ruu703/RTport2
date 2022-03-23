@@ -6,7 +6,7 @@ ini_set('error_log','php.log');
 
 //デバッグ
 
-$debug_flg = true;
+$debug_flg = false;
 
 function debug($str){
     global $debug_flg;
