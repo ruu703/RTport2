@@ -57,14 +57,14 @@ if(!empty($_POST)){
                         本メールアドレス宛にパスワードの再発行を致しました。
                         下記のURLにて再発行パスワードをご入力頂き、ログインください。
 
-                        ログインページ：http://localhost/WEBUKATU/op/nekozukan/login.php
+                        ログインページ：https://ruka.sakura.ne.jp/nekozukan/login.php
                         再発行パスワード：{$pass}
                         ※ログイン後、パスワードのご変更をお願い致します
 
                         //////////////////////////////////
                         ねこ図鑑
-                        URL http://nekozukan.com/
-                        E-mail info@nekozukan.com
+                        URL https://ruka.sakura.ne.jp/nekozukan/
+                        E-mail nekozukan@ruka.sakura.ne.jp
                         /////////////////////////////////
                         COT;
                         sendMail($form,$to,$subject,$comment);

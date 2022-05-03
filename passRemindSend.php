@@ -46,18 +46,18 @@ debug('POST情報：'.print_r($_POST,true));
                     本メールアドレス宛にパスワード再発行のご依頼がありました。
                     下記のURLにて認証キーをご入力頂くとパスワードが再発行されます。
 
-                    パスワード灰発行認証キー入力ページ: http://localhost/WEBUKATU/op/nekozukan/passRemindRecieve.php
+                    パスワード再発行認証キー入力ページ: https://ruka.sakura.ne.jp/nekozukan/passRemindRecieve.php
                     認証キー　: {$auth_key}
                     ※認証キーの有効期限は30分となります
 
                     認証キーの再発行は下記ページより再度、再発行をお願い致します。
-                    http://localhost/WEBUKATU/op/nekozukan/passRemindSend.php
+                    https://ruka.sakura.ne.jp/nekozukan/passRemindSend.php
 
 
                     //////////////////////////////////
                     ねこ図鑑
-                    URL http://nekozukan.com/
-                    E-mail info@nekozukan.com
+                    URL https://ruka.sakura.ne.jp/nekozukan/
+                    E-mail nekozukan@ruka.sakura.ne.jp
                     /////////////////////////////////
                     COT;
                     
