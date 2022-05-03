@@ -146,9 +146,9 @@ function getErrMsg($key){
 }
 //データベース
 function dbConnect(){
-    $dsn = 'mysql:dbname=nekozukan;host=localhost;charset=utf8';
-    $user = 'root';
-    $password = 'root';
+    $dsn = 'mysql:dbname=;host=localhost;charset=utf8';
+    $user = '';
+    $password = '';
     $options = array(
          // SQL実行失敗時にはエラーコードのみ設定
     PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,

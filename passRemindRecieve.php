@@ -50,7 +50,7 @@ if(!empty($_POST)){
                     if($stmt){
                         debug('クエリ成功。');
                         
-                        $form = 'ruka7373@gmail.com';
+                        $from = '送信元メールアドレス';
                         $to = $_SESSION['auth_email'];
                         $subject = '【パスワード再発行完了】｜　ねこ図鑑';
                         $comment = <<<COT
@@ -67,7 +67,7 @@ if(!empty($_POST)){
                         E-mail nekozukan@ruka.sakura.ne.jp
                         /////////////////////////////////
                         COT;
-                        sendMail($form,$to,$subject,$comment);
+                        sendMail($from,$to,$subject,$comment);
                         
                         session_unset();
                         $_SESSION['msg_success'] = SUC03;

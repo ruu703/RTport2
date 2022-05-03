@@ -39,7 +39,7 @@ debug('POST情報：'.print_r($_POST,true));
                     
                     $auth_key = makeRandKey();
                     
-                    $form = 'ruka7373@gmail.com';
+                    $from = '送信元メールアドレス';
                     $to = $email;
                     $subject = ' パスワード再発行認証　|　ねこ図鑑';
                     $comment = <<<COT
@@ -61,7 +61,7 @@ debug('POST情報：'.print_r($_POST,true));
                     /////////////////////////////////
                     COT;
                     
-                    sendMail($form,$to,$subject,$comment);
+                    sendMail($from,$to,$subject,$comment);
                     
                     $_SESSION['auth_key'] = $auth_key;
                     $_SESSION['auth_email'] = $email;
