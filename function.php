@@ -1,7 +1,7 @@
 <?php
 
 //ログを取る、ログファイル出力
-ini_set('log_errors','on');
+ini_set('log_errors','off');
 ini_set('error_log','php.log');
 
 //デバッグ
