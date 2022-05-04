@@ -53,7 +53,7 @@ if(!empty($_POST)){
                     $_SESSION['msg_success'] = SUC01;
                     
                     $username = ($userData['username']) ? $userData['username'] : '名無し';//ユーザー名　
-                    $from = 'ruka7373@gmail.com';//送信元メールアドレス
+                    $from = '送信元メールアドレス';//送信元メールアドレス
                     $to = $userData['email'];//送信先メールアドレス
                     $subject = 'パスワード変更通知　|  ねこ図鑑';//件名
                     $comment = <<<TEXT
