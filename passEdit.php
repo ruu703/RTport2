@@ -62,8 +62,8 @@ if(!empty($_POST)){
 
 //////////////////////////////////////
 ねこ図鑑
-URL http://nekozukan.com/
-Email info@nekozukan.com
+URL https://ruka.sakura.ne.jp/nekozukan/
+E-mail nekozukan@ruka.sakura.ne.jp
 //////////////////////////////////////
 TEXT;
             sendMail($from,$to,$subject,$comment);
