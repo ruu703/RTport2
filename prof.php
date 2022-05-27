@@ -41,7 +41,7 @@ if(!empty($_POST)){
        if(empty($err_msg['email'])){
            validEmailDup($email);
        }
-    　　validEmail($email,'email');
+       validEmail($email,'email');
        validRequired($email,'email');
    }
     
